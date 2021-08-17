@@ -8,14 +8,11 @@ import {
   Route
 } from "react-router-dom";
 import { withAuth0 } from '@auth0/auth0-react';
-import Profile from './profile'
+import Profile from './profile';
+import Login from './Login';
 import BestBooks from './BestBooks'
-import Login from './Login'
 
 class App extends React.Component {
-
-
-
 
   render() {
     console.log('app', this.props);
@@ -35,7 +32,6 @@ class App extends React.Component {
               </Route>
             </Switch>
             <Footer />
-         
         </Router>
       </>
     );
